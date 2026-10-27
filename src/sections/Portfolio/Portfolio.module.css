@@ -1,0 +1,392 @@
+.portfolio {
+  background: var(--preto);
+}
+
+.asterisco {
+  position: absolute;
+  right: 5%;
+  top: 70px;
+  width: 120px;
+  height: 120px;
+}
+
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 26px;
+  margin-top: 26px;
+}
+
+.titulo {
+  margin: 0;
+  font-size: clamp(60px, 9vw, 140px);
+  line-height: 0.92;
+}
+
+.titulo span {
+  color: var(--laranja);
+}
+
+.abas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: var(--cinza);
+  padding: 6px;
+  border-radius: 16px;
+}
+
+.aba {
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: transparent;
+  color: #fff;
+}
+
+.aba.ativa {
+  background: var(--roxo);
+}
+
+.galeria {
+  margin-top: 48px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.post {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--cinza);
+  text-decoration: none;
+}
+
+.post.quadrado {
+  aspect-ratio: 1 / 1;
+}
+
+.post img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.post:hover img {
+  transform: scale(1.06);
+}
+
+.sobreposicao {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(92, 0, 188, 0.92), rgba(92, 0, 188, 0.15) 55%, transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.post:hover .sobreposicao,
+.post:focus-visible .sobreposicao,
+.feed:hover .sobreposicao,
+.feed:focus-visible .sobreposicao {
+  opacity: 1;
+}
+
+.sobreposicaoFeed {
+  background: linear-gradient(to top, rgba(92, 0, 188, 0.9), rgba(92, 0, 188, 0.1) 50%, transparent);
+  justify-content: center;
+  padding: 24px;
+}
+
+.selo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--laranja);
+  color: var(--tinta);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+
+.instagram {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feeds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feed {
+  flex: 1 1 260px;
+  min-width: 0;
+  max-width: 330px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.feed:hover {
+  color: #fff;
+  transform: translateY(-8px);
+}
+
+.celular {
+  position: relative;
+  border: 10px solid #1f1f1f;
+  border-radius: 42px;
+  overflow: hidden;
+  background: var(--preto);
+  box-shadow:
+    0 0 0 2px #333,
+    0 24px 50px rgba(0, 0, 0, 0.45);
+}
+
+.celular img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  object-fit: cover;
+  object-position: top;
+}
+
+.perfil {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.perfilIcone {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 12px;
+  background: var(--roxo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfilTexto {
+  min-width: 0;
+}
+
+.perfilNome {
+  display: block;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.05;
+}
+
+.perfilArroba {
+  display: block;
+  margin-top: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--laranja);
+}
+
+.perfilDescricao {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #ddd;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.video {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.video:hover {
+  color: #fff;
+}
+
+.capa {
+  position: relative;
+  display: block;
+  aspect-ratio: 9 / 16;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--roxo-escuro);
+}
+
+.capa img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.video:hover .capa img {
+  transform: scale(1.05);
+}
+
+.sombra {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.55), transparent 45%);
+}
+
+.play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 76px;
+  height: 76px;
+  margin: -38px 0 0 -38px;
+  border-radius: 50%;
+  background: var(--laranja);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease;
+}
+
+.video:hover .play {
+  transform: scale(1.15);
+}
+
+.reels {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  background: rgba(17, 17, 17, 0.6);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.videoNome {
+  display: block;
+  margin-top: 16px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.videoDescricao {
+  display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #ddd;
+}
+
+.mais {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.maisLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.maisLink:hover {
+  color: #fff;
+}
+
+.maisIcone {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--roxo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maisRec {
+  margin-left: 20px;
+}
+
+.maisRec .maisIcone {
+  background: var(--laranja);
+}
+
+@media (hover: none) {
+  .sobreposicao {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .posts {
+    gap: 8px;
+  }
+
+  .post {
+    border-radius: 10px;
+  }
+
+  .selo {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .videos {
+    gap: 8px;
+  }
+
+  .play {
+    width: 44px;
+    height: 44px;
+    margin: -22px 0 0 -22px;
+  }
+}

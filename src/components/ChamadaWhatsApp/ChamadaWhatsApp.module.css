@@ -1,0 +1,41 @@
+.chamada {
+  display: inline-flex;
+  align-items: stretch;
+  text-decoration: none;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.icone {
+  width: 76px;
+  flex: none;
+  background: var(--roxo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.15;
+  color: var(--tinta);
+}
+
+.complemento {
+  color: var(--roxo);
+}
+
+.escura {
+  background: var(--cinza);
+}
+
+.escura .texto {
+  color: #fff;
+}
+
+.escura .complemento {
+  color: var(--violeta);
+}

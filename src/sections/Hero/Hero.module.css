@@ -1,0 +1,98 @@
+.hero {
+  padding: clamp(50px, 6vw, 90px) clamp(20px, 5vw, 72px) clamp(70px, 8vw, 120px);
+}
+
+.asterisco {
+  position: absolute;
+  right: -6%;
+  bottom: -14%;
+  width: min(44vw, 440px);
+  height: min(44vw, 440px);
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+}
+
+.marca {
+  color: var(--laranja);
+}
+
+.slogan {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.linha {
+  height: 3px;
+  background: var(--violeta);
+  margin-top: 16px;
+}
+
+.titulo {
+  margin: clamp(30px, 4vw, 56px) 0 0;
+  font-size: clamp(64px, 11.4vw, 176px);
+  line-height: 0.92;
+}
+
+.claro {
+  color: #f4f4f4;
+}
+
+.destaque {
+  color: var(--laranja);
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 60px;
+  margin-top: 40px;
+  align-items: flex-end;
+}
+
+.texto {
+  flex: 1 1 520px;
+  min-width: 0;
+}
+
+.descricao {
+  margin: 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.4;
+  color: #fff;
+  max-width: 700px;
+}
+
+.circulado {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.circulado svg {
+  position: absolute;
+  left: -6%;
+  top: -18%;
+  width: 112%;
+  height: 140%;
+  overflow: visible;
+}
+
+.servicos {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.cta {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

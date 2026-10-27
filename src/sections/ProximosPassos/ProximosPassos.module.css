@@ -1,0 +1,56 @@
+.proximosPassos {
+  background: var(--preto);
+}
+
+.asterisco {
+  position: absolute;
+  right: 5%;
+  top: 70px;
+  width: 120px;
+  height: 120px;
+}
+
+.titulo {
+  margin: 26px 0 0;
+  font-size: clamp(56px, 8vw, 120px);
+  line-height: 0.92;
+}
+
+.titulo span {
+  color: var(--laranja);
+}
+
+.passos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 50px;
+}
+
+.passo {
+  flex: 1 1 280px;
+  min-width: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 22px;
+  padding: 30px 28px;
+}
+
+.passo p {
+  margin: 10px 0 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #ddd;
+}
+
+.numero {
+  font-size: 56px;
+  line-height: 1;
+  color: var(--laranja);
+}
+
+.passoTitulo {
+  margin-top: 14px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.05;
+}

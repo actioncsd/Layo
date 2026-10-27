@@ -1,0 +1,13 @@
+.sublinhado {
+  position: relative;
+  display: inline-block;
+  color: var(--roxo);
+}
+
+.sublinhado svg {
+  position: absolute;
+  left: -3%;
+  bottom: -0.18em;
+  width: 106%;
+  height: 0.32em;
+}

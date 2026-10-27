@@ -1,0 +1,126 @@
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.titulo {
+  position: relative;
+  margin: 0;
+  font-weight: 800;
+  font-size: clamp(50px, 6.6vw, 96px);
+  line-height: 1.02;
+}
+
+.intro {
+  margin: 34px 0 0;
+  font-size: 20px;
+  line-height: 1.55;
+  max-width: 640px;
+  color: #333;
+}
+
+.logo {
+  width: 210px;
+  height: auto;
+}
+
+.riscos {
+  display: block;
+  margin: 0 0 0 min(60%, 640px);
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 70px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.lista {
+  flex: 1.4 1 480px;
+  min-width: 0;
+}
+
+.servico {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 18px 0;
+}
+
+.icone {
+  width: 76px;
+  height: 76px;
+  flex: none;
+  border-radius: 50%;
+  border: 1.5px solid var(--roxo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divisor {
+  width: 1.5px;
+  align-self: stretch;
+  background: var(--roxo);
+  opacity: 0.6;
+}
+
+.descricao {
+  min-width: 0;
+}
+
+.servicoTitulo {
+  font-weight: 700;
+  font-size: clamp(24px, 2.4vw, 30px);
+  color: var(--laranja);
+  line-height: 1.05;
+}
+
+.servicoTexto {
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--tinta);
+}
+
+.lateral {
+  flex: 1 1 340px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dados {
+  background: #fff;
+  border-radius: 26px;
+  padding: 34px 32px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+}
+
+.dados p {
+  margin: 26px 0 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.lampada {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--roxo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dadosTitulo {
+  margin-top: 24px;
+  font-weight: 800;
+  font-size: clamp(34px, 3.2vw, 44px);
+  line-height: 1.02;
+}
